@@ -1,0 +1,682 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Cuprum&display=swap');
+/* CSS Document */
+
+body 
+{
+	max-width: 2000px;
+	font-size: 18px;
+}
+
+a, h2 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.2em;
+}
+
+p, h4 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font-family: 'Cuprum', sans-serif;
+}
+
+h3 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font: bold;
+}
+
+.corpo 
+{
+	justify-content: space-between;
+	
+}
+
+.conteudo 
+{          
+	position: relative;
+	margin-top: 21px;
+	align-items: baseline;
+	width: 100%;
+	z-index: -1;
+}
+
+/*######## MENU ########*/
+header
+{
+	z-index: 100;
+}
+
+.menu 
+{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #07014285;
+    align-items: center;
+    margin: 0px 0;
+    z-index: 100000;
+}
+
+.menu div 
+{
+	width: 10%;
+}
+
+.menu img{
+	position: relative;
+    top: 0pc;
+    left: 10%;
+	width: 5%;
+}
+
+.menu h1 
+{
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.menu nav 
+{
+	width: 58%;
+    display: flex;
+    position: relative;
+    right: -9%;
+}
+
+.menu nav ul 
+{
+	display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    margin: 0px auto 0;
+    position: relative;
+}
+
+.menu nav ul li
+{ 
+    list-style-type: none;
+    width: 13%;
+    padding: 0% 0% 3%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.menu nav ul li a 
+{
+	color: #ffffff;
+    text-decoration: none;
+    width: 138px;
+    z-index: 9999;
+}
+.menu nav ul li i
+{
+	width: 133px;
+    color: #1c00ff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.gif
+{
+	z-index: -2;
+}
+
+.gif1, .gif2, .gif3, .gif4
+{
+	display: none;
+	z-index: -2;
+}
+
+ .indexGif
+{
+    max-width: 2000px;
+	width: 100%;
+    height: 958px;
+    position: relative;
+    margin-top: -943px;
+	z-index: -1;
+}
+
+/*######## SERVICO ########*/
+
+.servico
+{	
+	padding: 1% 20.5% 3% 20.5%;
+	text-align: center;
+}
+
+.servicoUm
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.servicoUm article 
+{
+	width: 37%;
+	box-shadow: 0px 0px 8px 1px #333;
+	padding: 2px;
+	border-radius: 5px;
+}
+.servicoUm article:nth-child(2) img:nth-child(2)
+{
+	width: 17%;
+    height: 82px;
+    position: relative;
+    top: 39px;
+    right: -3%;
+}
+
+.servicoUm article:nth-child(2) img:nth-child(3)
+{
+	width: 20%;
+    height: 77px;
+    position: relative;
+    top: 97px;
+    right: -5%;
+}
+
+.servicoUm article:nth-child(2) img
+{
+	position: relative;
+    top: -76px;
+    width: 100%;
+    height: 216px;
+    border-radius: 5px 5px 0 0;
+}
+
+.servicoUm article img
+{
+	width: 100%;
+	height: 216px;
+	border-radius: 5px 5px 0 0;
+}
+
+.servico h2 
+{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+	margin-bottom: 2%;
+}
+
+.servicoUm article h3
+{
+	color: #0874bb;
+	padding: 3% 0;
+	font-size: 1.5em;
+}
+
+.servicoUm article p
+{
+	padding: 3%;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.servicoUm article:nth-child(2) p
+{
+	margin-top: -53px;
+}
+
+.servicoUm article a
+{
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 28px;
+	background: #000000;
+	text-decoration: none;
+	color: #FC0004;
+	border-radius: 5px;
+	
+}
+
+.servicoUm article a:hover
+{
+	background: #0000009c;
+	color: #0874bb;
+}
+
+
+
+
+/*######## INSTA ########*/
+
+.instaCar 
+{
+	padding: 1% 0;
+    background: #00000091;
+    margin-bottom: 2%;
+}
+
+/*######## TEAM ########*/
+.col-sm-4
+{
+	height: 370px;
+}
+.middle
+{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.card
+{
+	cursor: pointer;
+	width: 340px;
+	height: 370px;
+}
+
+.front,.back
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.front
+{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.back
+{
+	background: #1c1d21;
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content
+{
+	color: #f1f1f1;
+	text-align: center;
+	width: 100%;
+}
+
+.back-content h3
+{
+	color: #F1f1f1;
+}
+
+.sm
+{
+	margin: 20px 0;
+}
+
+.sm a
+{
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	color: #6195ff;
+	font-size: 18px;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+.sm a:hover
+{
+	background: #6195ff;
+	color: white;
+}
+
+.card:hover > .front
+{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back
+{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/*######## RODAPE ########*/
+
+.rodape
+{
+	background-image: url(../img/rodape.jpg);
+    background-position: 100% 92%;
+    padding: 1% 0;
+}
+
+.rodape div
+{
+	display:flex;
+	justify-content: center;
+}
+
+.rodape div div
+{
+	display: block;
+	/*width: 100%;*/
+	padding: 0 6%;
+}
+
+.rodape div div h2
+{
+	color: white;
+    font-size: 2em;
+	text-align: center;
+}
+
+.sobreR div p
+{
+	font-size: 1.4em;
+    margin-top: 38px;
+    color: white;
+}
+
+.servicoR article
+{
+	margin-top: 38px;
+}
+
+.servicoR article div
+{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.servicoR article div a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.redes article div
+{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	
+}
+
+.redes article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.redes article div section:nth-child(1)
+{
+	width: 20%;
+	margin-right: 3%;
+}
+
+.numero article div
+{
+	display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    justify-content: end;
+    left: 78px;
+	
+}
+
+.numero article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.numero article div section:nth-child(1)
+{
+	width: 20%;
+	margin-right: 3%;
+}
+
+
+.direitos
+{
+	padding: 1% 0;
+    text-align: center;
+    color: #FFF;
+    background: #000000;
+    font-size: 0.8em;
+    position: relative;
+    bottom: -69px;
+	margin: 0;
+}
+
+
+@media(max-width: 1920px)
+{
+	
+	body
+	{
+		max-width: 1920px;
+	}
+	.gif
+	{
+		display: none;
+	}
+
+	.gif1
+	{
+		display: block;
+	}
+	.indexGif
+	{
+		max-width: 1920px;
+		width: 100%;
+	}
+	
+}
+
+@media(max-width: 1336px)
+{
+	body
+	{
+		max-width: 1336px;
+	}
+	
+	.menu img 
+	{
+    	width: 8%;
+	}
+	
+	.menu nav ul li 
+	{
+    width: 17%;
+	}
+	
+	.gif1
+	{
+		display: none;
+	}
+
+	.gif2
+	{
+		display: block;
+	}
+	.indexGif
+	{
+		max-width: 1336px;
+		width: 100%;
+	}
+	
+	.rodape
+	{
+    	background-size: cover;
+	}
+	
+	.direitos 
+	{
+    	bottom: -13px;
+	}
+}
+
+@media(max-width: 1200px)
+{
+	.rodape div div 
+	{
+		padding: 0 7%
+	}
+}
+
+@media(max-width: 768px)
+{
+	body
+	{
+		max-width: 768px;
+	}
+	
+	.menu img 
+	{
+    	display: none;
+	}
+	
+	.menu nav
+	{
+		width: 100%;
+	}
+	
+	.menu nav ul li 
+	{
+    	width: 20%;
+	}
+	
+	.menu nav ul li a 
+	{
+    	padding: 32% 15%;
+	}
+	.gif2
+	{
+		display: none;
+	}
+
+	.gif3
+	{
+		display: block;
+	}
+	.indexGif
+	{
+		max-width: 768px;
+		width: 100%;
+	}
+	
+	.instaCar
+	{
+		height: 165px;
+	}
+	
+	.span01 span
+	{
+		font-size: 10px;
+	}
+	
+	.rodape 
+	{
+		background-position: 85% 93%;
+		background-size: 134% 100%;
+    	background-repeat: no-repeat;
+	}
+	
+	.rodape div
+	{
+		display: block;
+	}
+	
+	.rodape div div h2 
+	{
+    	font-size: 2em;
+    	margin: 5% 0 3%;
+	}
+	
+	.servicoR article div 
+	{
+		width: 60%;
+		font-size: 1.5em;
+		padding: 0;
+		text-align: start;
+		margin: 0 0% 5px 32%;
+	}
+	
+	.servicoR article div a 
+	{
+    	font-size: 1em;
+	}
+	
+	.redes article div 
+	{
+		align-items: center;
+		padding: 0;
+		justify-content: end;
+		margin: 0 0% 5PX 32%;
+		width: 60%;
+	}
+	
+	.numero article div 
+	{
+		align-items: center;
+		position: none;
+		padding: 0;
+		left: 0;
+		justify-content: end;
+		margin: 0 0% 5PX 32%;
+		width: 60%
+	}
+    
+}
+
+@media(max-width: 480px)
+{
+	body
+	{
+		max-width: 480px;
+	}
+	
+	.menu
+	{
+		height: 90px;
+		margin: -21px 0 20px;
+	}
+	
+	.menu nav
+	{
+		display: none;
+	}
+	
+	.gif3
+	{
+		display: none;
+	}
+	
+	.indexGif
+	{
+		display: none;
+	}
+	.redes
+	{
+		margin-left: -29px;
+	}
+	.numero{
+		margin-left: 10px;
+	}
+	
+}
+
+
+

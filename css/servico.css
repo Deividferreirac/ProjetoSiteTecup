@@ -1,0 +1,754 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Cuprum&display=swap');
+/* CSS Document */
+
+body, p, h1, h2, h3, h4, h5, h6 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+body 
+{
+    line-height: 28px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+* 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before 
+{
+    box-sizing: border-box;
+}
+
+/*################ MENU ################*/
+
+.main_menu_area 
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 30;
+    padding: 0px 45px;
+}
+
+.main_menu_area .navbar 
+{
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+}
+
+.main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a 
+{
+  color: #0b1033;
+}
+
+.active a 
+{
+	color: #0b1033;
+}
+
+.main_menu_area.navbar_fixed 
+{
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    transform: translateY(70px);
+    -webkit-transition: background 500ms ease, -webkit-transform 500ms ease;
+    transition: background 500ms ease, -webkit-transform 500ms ease;
+    -o-transition: transform 500ms ease, background 500ms ease;
+    transition: transform 500ms ease, background 500ms ease;
+    transition: transform 500ms ease, background 500ms ease, -webkit-transform 500ms ease;
+    -webkit-transition: transform 500ms ease, background 500ms ease;
+    z-index: 999999;
+}
+
+.bg-light 
+{
+    background-color: #f8f9fa!important;
+}
+
+.navbar 
+{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.topo-LOGO 
+{
+    width: 50%;
+}
+
+img 
+{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.main_menu_area .navbar .navbar-toggler 
+{
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.navbar-light .navbar-toggler 
+{
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+}
+
+.main_menu_area .navbar .navbar-toggler span 
+{
+    height: 3px;
+    width: 25px;
+    display: block;
+    background: #0b1033;
+    margin-bottom: 3px;
+}
+
+.main_menu_area .navbar .navbar-collapse 
+{
+    text-align: right;
+    display: block !important;
+}
+
+.navbar-expand-lg .navbar-collapse 
+{
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+.navbar-collapse 
+{
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.collapse 
+{
+    display: none;
+}
+
+.main_menu_area .navbar .navbar-nav 
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar-expand-lg .navbar-nav 
+{
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.navbar-nav 
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul 
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_menu_area .navbar .navbar-nav li 
+{
+    display: inline-block;
+    margin-right: 55px;
+}
+
+.main_menu_area.navbar_fixed .navbar .navbar-nav li a 
+{
+    line-height: 70px;
+}
+.main_menu_area .navbar .navbar-nav li a 
+{
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .65px;
+    padding: 0px;
+    line-height: 118px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+/*################ BANNER ################*/
+
+.banner_area 
+{
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.banner_area:before 
+{
+    content: "";
+    background: url(../img/banner.png) no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner_inner_text 
+{
+    padding-top: 200px;
+    position: relative;
+    padding-bottom: 95px;
+}
+
+.banner_inner_text:before 
+{
+    content: "";
+    width: 213px;
+    height: 1px;
+    position: absolute;
+    background: #ced0e0;
+    left: 0px;
+    bottom: 0px;
+}
+
+.banner_inner_text h2 
+{
+    font-size: 72px;
+    color: #5e83ba;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: normal;
+}
+
+.banner_inner_text p 
+{
+    font-size: 24px;
+    color: #6b7d8e;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+/*################ SERVICO ################*/
+
+.service_feature 
+{
+    border-bottom: 1px solid #bbbec1;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.service_feature .feature_inner 
+{
+    margin-bottom: -50px;
+}
+
+.service_feature .feature_inner .feature_item 
+{
+    margin-bottom: 50px;
+}
+
+.feature_item 
+{
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+.feature_item .f_icon 
+{
+    min-height: 91px;
+    position: relative;
+}
+
+.feature_item h4 
+{
+    color: #0b1033;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 45px 0px 20px 0px;
+}
+
+.feature_item p 
+{
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    color: #7c8d93;
+    font-weight: 500;
+    max-width: 290px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+/*################ CIRCULO ################*/
+
+.circle_chart_area 
+{
+    padding: 85px 0px 80px 0px;
+}
+
+.circle_progress .circle_progress_inner 
+{
+    position: relative;
+    max-width: 175px;
+    margin: auto;
+}
+
+.circle_progress .circle_progress_inner strong 
+{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #0b1033;
+    margin-top: -13px;
+}
+
+.circle_progress .circle_progress_inner .percentage 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    background: #08688C;
+    background: -moz-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: -webkit-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#08688C), to(#5EA4BF));
+    background: -o-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: linear-gradient(to right, #08688C 0%, #5EA4BF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08688C', endColorstr='#5EA4BF',GradientType=1 );
+}
+
+.circle_progress .circle_progress_inner .percentage 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    background: #08688C;
+    background: -moz-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: -webkit-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#08688C), to(#5EA4BF));
+    background: -o-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: linear-gradient(to right, #08688C 0%, #5EA4BF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08688C', endColorstr='#5EA4BF',GradientType=1 );
+}
+
+.circle_progress .circle_progress_inner .percentage:after 
+{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: #fff;
+}
+
+.circle_progress .circle_progress_inner h4 
+{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #7c8d93;
+    font-weight: 500;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/*################ SOLUÇÃO ################*/
+
+.service_solution_area 
+{
+    background: url(../img1/service-bg.jpg) no-repeat fixed center right;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+}
+
+.service_solution_area:before 
+{
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.l_title 
+{
+    padding-bottom: 55px;
+}
+
+.l_title img 
+{
+    padding-bottom: 30px;
+    width: 12%;
+}
+
+.l_title h6 
+{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c8d93;
+    padding-bottom: 10px;
+}
+
+.l_title h2 
+{
+    font-size: 48px;
+    color: #0b1033;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.s_solution_item p 
+{
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #7c8d93;
+}
+
+.solution_collaps 
+{
+    margin-top: 60px;
+}
+
+.solution_collaps .card 
+{
+    margin-bottom: 25px;
+    border: none;
+}
+
+.solution_collaps .card .card-header 
+{
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.solution_collaps .card .card-header h5 a 
+{
+    background: #08688C;
+    background: -moz-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    background: -webkit-linear-gradient(left, #08688C 0%, #5EA4BF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08688C', endColorstr='#5EA4BF',GradientType=1 );
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 11px 25px 11px 20px;
+    line-height: 26px;
+    position: relative;
+}
+
+.solution_collaps .card .card-body p 
+{
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #7c8d93;
+}
+
+.s_solution_item p 
+{
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #7c8d93;
+}
+
+.solution_collaps .card .card-header h5 a i 
+{
+    display: inline-block;
+    font-style: normal;
+    position: absolute;
+    right: 20px;
+    line-height: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.solution_collaps .card .card-header h5 .collapsed i + i 
+{
+    display: inline-block;
+}
+.solution_collaps .card .card-header h5 .collapsed i 
+{
+    display: none;
+}
+.solution_collaps .card .card-header h5 a i + i 
+{
+    display: none;
+}
+.solution_collaps .card .card-header h5 a i 
+{
+    display: inline-block;
+    font-style: normal;
+    position: absolute;
+    right: 20px;
+    line-height: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+.card 
+{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+/*################ RODAPE ################*/
+
+.footr_area
+{
+	background-image: url(../img/rodape.jpg);
+    background-position: 100% 100%;
+    background-size: 107%;
+    padding: 1% 0 3%;
+	margin-top: 5%;
+}
+
+.footer_widget_inner
+{
+	display:flex;
+	justify-content: space-around;
+}
+
+.footer_widget_inner h2
+{
+	color: #08688c;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.7em;
+	text-align: center;
+}
+
+.widget-title {
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.widget-title:before 
+{ 
+	content: ''; 
+	position: absolute; 
+	bottom: -10px;
+	left: 37%;
+	height: 3px;
+	width: 12%;
+	max-width: 90%;
+	background-color: #c8385e;
+	transition:all .2s ease;
+}
+.widget:hover .widget-title:before, .widget-title:hover:before 
+{ 
+	width: 24%; 
+}
+.dark-div .widget-title:before 
+{
+	background-color: #eee;
+	background-color: rgba(255,255,255,.8); 
+}
+
+.widget-title:before 
+{
+    height: 0;
+    background-color: transparent !important;
+    border-top: double 5px;
+    color: #4747eedb;
+}
+
+.widget:hover .widget-title:before, .widget-title:hover:before 
+{
+	width: 24%;
+}
+
+.sobreR div p
+{
+	font-size: 1.4em;
+    margin-top: 38px;
+    color: white;
+}
+
+.servicoR article
+{
+	margin-top: 12%;
+}
+
+.servicoR article div
+{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.servicoR article div a
+{
+	text-decoration: none;
+    color: white;
+	font-size: 0.8em;
+}
+
+.redes article
+{
+	margin-top: 12%;
+}
+
+.redes article div
+{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	
+}
+
+.redes article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.redes article div section:nth-child(1)
+{
+	width: 30%;
+	margin-right: 3%;
+}
+
+.numero article
+{
+	margin-top: 12%;
+}
+
+.numero article div
+{
+	display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    justify-content: end;
+    left: 70px;
+	
+}
+
+.numero article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.numero article div section:nth-child(1)
+{
+	width: 24%;
+	margin-right: 3%;
+}
+
+.direitos
+{
+	padding: 1% 0;
+    text-align: center;
+    color: #FFF;
+    background: #000000;
+    font-size: 0.8em;
+    position: relative;
+    bottom: -69px;
+	margin: 0;
+}

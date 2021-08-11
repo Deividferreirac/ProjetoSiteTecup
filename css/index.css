@@ -1,0 +1,1126 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Cuprum&display=swap');
+/* CSS Document */
+* 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body 
+{
+	max-width: 2000px;
+	font-size: 18px;
+}
+
+a, h2 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.2em;
+}
+
+p, h4 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font-family: 'Cuprum', sans-serif;
+}
+
+h3 
+{
+	font-family: 'Archivo Narrow', sans-serif;
+	font: bold;
+}
+
+.corpo 
+{
+	justify-content: space-between;
+	
+}
+
+.conteudo 
+{          
+	position: relative;
+	margin-top: 21px;
+	align-items: baseline;
+	width: 100%;
+	z-index: -1;
+}
+
+/*################ MENU ################*/
+
+.main_menu_area 
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 30;
+    padding: 0px 45px;
+}
+
+.main_menu_area .navbar 
+{
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+}
+
+.main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a 
+{
+  color: #0b1033;
+}
+
+.active a 
+{
+	color: #0b1033;
+}
+
+.main_menu_area.navbar_fixed 
+{
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    transform: translateY(70px);
+    -webkit-transition: background 500ms ease, -webkit-transform 500ms ease;
+    transition: background 500ms ease, -webkit-transform 500ms ease;
+    -o-transition: transform 500ms ease, background 500ms ease;
+    transition: transform 500ms ease, background 500ms ease;
+    transition: transform 500ms ease, background 500ms ease, -webkit-transform 500ms ease;
+    -webkit-transition: transform 500ms ease, background 500ms ease;
+    z-index: 999999;
+}
+
+.bg-light 
+{
+    background-color: #f8f9fa!important;
+}
+
+.navbar 
+{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.topo-LOGO 
+{
+    width: 50%;
+}
+
+img 
+{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.main_menu_area .navbar .navbar-toggler 
+{
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.navbar-light .navbar-toggler 
+{
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+}
+
+.main_menu_area .navbar .navbar-toggler span 
+{
+    height: 3px;
+    width: 25px;
+    display: block;
+    background: #0b1033;
+    margin-bottom: 3px;
+}
+
+.main_menu_area .navbar .navbar-collapse 
+{
+    text-align: right;
+    display: block !important;
+}
+
+.navbar-expand-lg .navbar-collapse 
+{
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+.navbar-collapse 
+{
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.collapse 
+{
+    display: none;
+}
+
+.main_menu_area .navbar .navbar-nav 
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar-expand-lg .navbar-nav 
+{
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.navbar-nav 
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul 
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_menu_area .navbar .navbar-nav li 
+{
+    display: inline-block;
+    margin-right: 55px;
+}
+
+.main_menu_area.navbar_fixed .navbar .navbar-nav li a 
+{
+    line-height: 70px;
+}
+
+.main_menu_area .navbar .navbar-nav li a 
+{
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .65px;
+    padding: 0px;
+    line-height: 118px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+/*################ BANNER ################*/
+
+.gif
+{
+	z-index: -2;
+}
+
+.gif1, .gif2, .gif3, .gif4
+{
+	display: none;
+	z-index: -2;
+}
+
+.banner1
+{
+	display: none;
+}
+
+ .indexGif
+{
+    max-width: 2000px;
+	width: 100%;
+    height: 958px;
+    position: relative;
+    margin-top: -943px;
+	z-index: 0;
+}
+
+
+/*################ SERVICO ################*/
+
+.servico
+{	
+	padding: 1% 20.5% 3% 20.5%;
+	text-align: center;
+}
+
+.servicoUm
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.servicoUm article 
+{
+	width: 37%;
+	box-shadow: 0px 0px 8px 1px #333;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.servicoUm article:nth-child(2) img:nth-child(2)
+{
+	width: 17%;
+    height: 82px;
+    position: relative;
+    top: 39px;
+    right: -3%;
+}
+
+.servicoUm article:nth-child(2) img:nth-child(3)
+{
+	width: 20%;
+    height: 77px;
+    position: relative;
+    top: 97px;
+    right: -5%;
+}
+
+.servicoUm article:nth-child(2) img
+{
+	position: relative;
+    top: -76px;
+    width: 100%;
+    height: 216px;
+    border-radius: 5px 5px 0 0;
+}
+
+.servicoUm article img
+{
+	width: 100%;
+	height: 216px;
+	border-radius: 5px 5px 0 0;
+}
+
+.servico h2 
+{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+	margin-bottom: 2%;
+}
+
+.servicoUm article h3
+{
+	color: #0874bb;
+	padding: 3% 0;
+	font-size: 1.5em;
+}
+
+.servicoUm article p
+{
+	padding: 3%;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.servicoUm article:nth-child(2) p
+{
+	margin-top: -53px;
+}
+
+.servicoUm article a
+{
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 28px;
+	background: #000000;
+	text-decoration: none;
+	color: #FC0004;
+	border-radius: 5px;
+	
+}
+
+.servicoUm article a:hover
+{
+	background: #0000009c;
+	color: #0874bb;
+}
+
+/*################ PROGRESS ################*/
+
+.p_100 
+{
+    padding:0;
+}
+
+.company_skill 
+{
+    padding-top: 90px;
+	margin: 0 12%;
+}
+
+.company_skill p 
+{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 28px;
+    color: #7c8d93;
+    font-weight: 500;
+    padding-bottom: 70px;
+}
+
+.our_skill_inner .single_skill 
+{
+    margin-bottom: 20px;
+}
+
+.our_skill_inner .single_skill h3 
+{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #7c8d93;
+    font-weight: 500;
+}
+
+.our_skill_inner .single_skill .progress 
+{
+    height: 5px;
+    background: #ffffff;
+    border-radius: 0px;
+    overflow: visible;
+}
+
+.progress 
+{
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.our_skill_inner .single_skill .progress .progress-bar 
+{
+    background-image: -moz-linear-gradient(0deg, #024873 0%, #5EA4BF 100%);
+    background-image: -webkit-linear-gradient(0deg, #024873 0%, #5EA4BF 100%);
+    background-image: -ms-linear-gradient(0deg, #024873 0%, #5EA4BF 100%);
+    position: relative;
+}
+
+.progress-bar 
+{
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.our_skill_inner .single_skill .progress .progress-bar .progress_parcent 
+{
+    position: absolute;
+    right: -52px;
+    top: -35px;
+    background-image: -moz-linear-gradient(10deg, #024873 0%, #5EA4BF 100%);
+    background-image: -webkit-linear-gradient(10deg, #024873 0%, #5EA4BF 100%);
+    background-image: -ms-linear-gradient(10deg, #024873 0%, #5EA4BF 100%);
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 34px;
+    border-radius: 18px;
+}
+
+/*################ INSTA ################*/
+
+.instaCar 
+{
+	padding: 1% 0;
+    background: #00000091;
+    margin-bottom: 2%;
+}
+
+/*################ TEAM ################*/
+
+.middle
+{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card
+{
+	cursor: pointer;
+	width: 340px;
+	height: 370px;
+}
+
+.front,.back
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.front
+{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.back
+{
+	background: #1c1d21;
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content
+{
+	color: #f1f1f1;
+	text-align: center;
+	width: 100%;
+}
+
+.back-content h3
+{
+	color: #F1f1f1;
+}
+
+.sm
+{
+	margin: 20px 0;
+}
+
+.sm a
+{
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	color: #6195ff;
+	font-size: 18px;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+.sm a:hover
+{
+	background: #6195ff;
+	color: white;
+}
+
+.card:hover > .front
+{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back
+{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/*################ RODAPE ################*/
+
+.footr_area
+{
+	background-image: url(../img/rodape.jpg);
+    background-position: 100% 100%;
+    background-size: 107%;
+    padding: 1% 0 0%;
+	margin-top: 5%;
+}
+
+.footer_widget_inner
+{
+	display:flex;
+	justify-content: space-around;
+}
+
+.footer_widget_inner h2
+{
+	color: #6c5ce7;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.7em;
+	text-align: center;
+}
+
+.widget-title 
+{
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.widget-title:before 
+{ 
+	content: ''; 
+	position: absolute; 
+	bottom: -10px;
+	left: 37%;
+	height: 3px;
+	width: 12%;
+	max-width: 90%;
+	background-color: #c8385e;
+	transition:all .2s ease;
+}
+
+.widget:hover .widget-title:before, .widget-title:hover:before 
+{ 
+	width: 24%; 
+}
+
+.dark-div .widget-title:before 
+{
+	background-color: #eee;
+	background-color: rgba(255,255,255,.8); 
+}
+
+.widget-title:before 
+{
+    height: 0;
+    background-color: transparent !important;
+    border-top: double 5px;
+    color: #1B1464;
+}
+
+.widget:hover .widget-title:before, .widget-title:hover:before 
+{
+	width: 24%;
+}
+
+.sobreR div p
+{
+	font-size: 1.4em;
+    margin-top: 38px;
+    color: white;
+}
+
+.servicoR article
+{
+	margin-top: 12%;
+}
+
+.servicoR article div
+{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.servicoR article div a
+{
+	text-decoration: none;
+    color: white;
+	font-size: 0.8em;
+}
+
+.redes article
+{
+	margin-top: 12%;
+}
+
+.redes article div
+{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	
+}
+
+.redes article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.redes article div section:nth-child(1)
+{
+	width: 30%;
+	margin-right: 3%;
+}
+
+.numero article
+{
+	margin-top: 12%;
+}
+
+.numero article div
+{
+	display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    justify-content: end;
+    left: 70px;
+	
+}
+
+.numero article div section a
+{
+	text-decoration: none;
+    color: white;
+}
+
+.numero article div section:nth-child(1)
+{
+	width: 24%;
+	margin-right: 3%;
+}
+
+.direitos
+{
+	padding: 1% 0;
+    text-align: center;
+    color: #FFF;
+    background: #000000;
+    font-size: 0.8em;
+    position: relative;
+    bottom: -69px;
+	margin: 0;
+}
+
+/*################# RESPONSIVO ################*/
+
+@media(max-width: 1920px)
+{
+	
+	body
+	{
+		max-width: 1920px;
+	}
+	
+	.gif
+	{
+		display: none;
+	}
+
+	.gif1
+	{
+		display: block;
+	}
+	
+	.indexGif
+	{
+		max-width: 1920px;
+		width: 100%;
+	}
+	
+}
+
+@media(max-width: 1630px)
+{
+	.font div:nth-child(2) div p 
+	{
+		font-size: 1em;
+		margin: 5% 0;
+	}
+
+	.font div:nth-child(6) div p 
+	{
+		font-size: 1em;
+		 margin: 5.2% 0;
+	}
+	
+	.direitos 
+	{
+    	bottom: -45px;
+	}
+}
+
+@media(max-width: 1336px)
+{
+	body
+	{
+		max-width: 1336px;
+	}
+	
+	/*################ MENU ################*/
+	
+	.menu img 
+	{
+    	width: 8%;
+	}
+	
+	.menu nav ul li 
+	{
+    width: 17%;
+	}
+	
+	/*################ BANNER ################*/
+	
+	.gif1
+	{
+		display: none;
+	}
+
+	.gif2
+	{
+		display: block;
+	}
+	
+	.indexGif
+	{
+		max-width: 1336px;
+		width: 100%;
+	}
+	
+	/*################ SERVICO ################*/
+	
+	.font div:nth-child(2) div p 
+	{
+		font-size: 1em;
+		margin: 7.4% 0;
+	}
+
+	.font div:nth-child(6) div p 
+	{
+		margin: 7.4% 0;
+	}
+	
+	/*################ RODAPE ################*/
+	
+	.rodape
+	{
+    	background-size: cover;
+	}
+	
+	.direitos 
+	{
+    	bottom: -13px;
+	}
+}
+
+@media(max-width: 1200px)
+{
+	
+	.col-md-5
+	{
+		width: 100%;
+	}
+	.col-sm-6
+	{
+		width: 50%;
+	}
+	
+	.font div:nth-child(2) div p 
+	{
+		margin: 5.8% 0;
+	}
+	
+	.font div:nth-child(6) div p 
+	{
+		margin: 5.8% 0;
+	}
+	
+	.card 
+	{
+    	width: 313px;
+    	height: 367px;
+	}
+	
+	.rodape div div 
+	{
+		padding: 0 7%
+	}
+	
+	.direitos 
+	{
+    	bottom: -27px;
+	}
+}
+
+@media(max-width: 768px)
+{
+	body
+	{
+		max-width: 768px;
+	}
+	
+	.col-sm-6 
+	{
+    	width: 100%;
+	}
+	
+	.col-sm-4
+	{
+    	height: 383px;
+	}
+	
+	.col-sm-4
+	{
+		width: 100%;
+    	margin-bottom: 2%;
+	}
+	
+	
+	/*################ MENU ################*/
+	a 
+	{
+		font-family: 'Archivo Narrow', sans-serif;
+		font-size: 1.2em;
+		width: 25%;
+	}
+	.topo-LOGO 
+	{
+		width: 63%;
+	}
+	
+	.main_menu_area .navbar .navbar-collapse 
+	{
+		width: 70%;
+	}
+	
+	/*################ BANNER ################*/
+	
+	.gif2
+	{
+		display: none;
+	}
+	
+	.indexGif
+	{
+		display: none;
+	}
+	
+	.banner1
+	{
+		display: block;
+	}
+	
+	.banner_area 
+	{
+		position: relative;
+		z-index: 3;
+		overflow: hidden;
+	}
+
+
+	.banner_area:before 
+	{
+		content: "";
+		background: url(../img/banner.png) no-repeat;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.banner_inner_text 
+	{
+		padding-top: 200px;
+		position: relative;
+		padding-bottom: 95px;
+	}
+
+	.banner_inner_text:before 
+	{
+		content: "";
+		width: 213px;
+		height: 1px;
+		position: absolute;
+		background: #ced0e0;
+		left: 0px;
+		bottom: 0px;
+	}
+
+	.banner_inner_text h2 
+	{
+		font-size: 72px;
+		color: #5e83ba;
+		font-family: 'Big Shoulders Display', cursive;
+		font-weight: normal;
+	}
+
+	.banner_inner_text p 
+	{
+		font-size: 24px;
+		color: #6b7d8e;
+		font-family: "Roboto", sans-serif;
+		font-weight: normal;
+		padding-top: 15px;
+	}
+	
+	/*################ NECESSIDADE ################*/
+	
+	.about 
+	{
+    	padding: 2%;
+	}
+	
+	.card 
+	{
+    	width: 340px;
+    	height: 385px;
+	}
+	
+	/*################ INSTA ################*/
+	
+	.instaCar
+	{
+		height: 165px;
+	}
+	
+	/*################ RODAPE ################*/
+	
+	.footr_area 
+	{
+		background-position: 72% 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.footer_widget_inner 
+	{
+		display: block; 
+		justify-content: space-around;
+	}
+    
+	.servicoR article 
+	{
+    	margin: 5%;
+	}
+	
+	.servicoR article div 
+	{
+		width: 100%;
+		font-size: 1.5em;
+		text-align: center;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	
+	.servicoR article div a 
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 1em;
+	}
+	
+	.redes article 
+	{
+		margin: 5%;
+	}
+	
+	.redes article div 
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		width: 40%;
+		margin: 0 auto 1%;
+	}
+	
+	.numero article 
+	{
+		margin: 5%;
+	}
+	
+	.numero article div 
+	{
+		display: flex;
+		align-items: center;
+		padding: 0;
+		position: relative;
+		justify-content: center;
+		left: -23px;
+		width: 50%;
+		margin: 0 auto 1%;
+	}
+	
+	.direitos
+	{
+		padding: 2% 0;
+		font-size: 1em;
+	}
+}
+
+@media(max-width: 480px)
+{
+	body
+	{
+		max-width: 480px;
+	}
+	
+	.container 
+	{
+		max-width: 480px;
+		width: 100%;
+	}
+	
+	a 
+	{
+		font-size: 1.2em;
+		width: 80%;
+		margin: 0 20%;
+	}
+	
+	.topo-LOGO 
+	{
+		width: 40%;
+		margin: 0px 23%;
+		justify-content: center;
+	}
+	
+	.main_menu_area .navbar .navbar-collapse 
+	{
+    	width: 100%;
+	}	
+	
+	.redes article div 
+	{
+		width: 60%;
+	}
+	
+	.numero article div {
+    width: 80%;
+}
+	
+}
+
